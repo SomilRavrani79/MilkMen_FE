@@ -1,0 +1,7 @@
+{
+  "name": "MilkMen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

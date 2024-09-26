@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MilkMen</string>
+    <string name="title_activity_main">MilkMen</string>
+    <string name="package_name">com.milkmen.app</string>
+    <string name="custom_url_scheme">com.milkmen.app</string>
+</resources>

@@ -1,0 +1,98 @@
+
+
+$primary-color: #3fa5e8; // Define your actual color as well
+$background-color: var(--ion-background-color);
+$shadow-color: rgba(0, 0, 0, 0.2);
+$transition-speed: 0.3s;
+
+.main_content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main_content ion-card {
+  margin-bottom: 30%;
+}
+
+.login-card {
+  width: 100%;
+  margin: 5% auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background: $background-color;
+  transition: transform $transition-speed, box-shadow $transition-speed;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px $shadow-color;
+  }
+}
+
+ion-card-header {
+  background: linear-gradient(135deg, $primary-color, rgba(162, 200, 225, 0.9)); // Adjust the second color if needed
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  position: relative;
+}
+
+ion-card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: $background-color;
+}
+
+ion-card-subtitle {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: $background-color;
+  border-radius: 0 0 12px 12px;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+
+  ion-item {
+    width: 100%;
+    .item-native {
+      border-color: $primary-color;
+    }
+
+    ion-label {
+      color: $primary-color;
+    }
+  }
+
+  ion-button {
+    --width: 100%;
+    --padding: 10px 16px;
+    --border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color $transition-speed, transform $transition-speed;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.login-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; // Add padding to prevent content from touching the edges
+}

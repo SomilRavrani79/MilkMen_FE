@@ -1,0 +1,68 @@
+[
+  {
+    "section": "customer",
+    "icon": "assets/images/Customer.png",
+    "altText": "Delivery Customer Icon",
+    "label": "My Customer"
+  },
+  {
+    "section": "deliveryBoy",
+    "icon": "assets/images/DeliveryBoy.png",
+    "altText": "Delivery Boy Icon",
+    "label": "Delivery Boy"
+  },
+  {
+    "section": "dailySell",
+    "icon": "assets/images/DailySell.png",
+    "altText": "Daily Sell Icon",
+    "label": "Daily Sell"
+  },
+  {
+    "section": "createBill",
+    "icon": "assets/images/CreateBill.png",
+    "altText": "Create Bill Icon",
+    "label": "Create Bill"
+  },
+  {
+    "section": "report",
+    "icon": "assets/images/Report.png",
+    "altText": "Report Icon",
+    "label": "Report"
+  },
+  {
+    "section": "products",
+    "icon": "assets/images/Product.png",
+    "altText": "Product Icon",
+    "label": "Products"
+  },
+  {
+    "section": "message",
+    "icon": "assets/images/Message.png",
+    "altText": "Message Icon",
+    "label": "Message"
+  },
+  {
+    "section": "receivedPayment",
+    "icon": "assets/images/PaymentReceived.png",
+    "altText": "Received Payment Icon",
+    "label": "Received Payment"
+  },
+  {
+    "section": "disputeRequest",
+    "icon": "assets/images/Dispute.png",
+    "altText": "Dispute Icon",
+    "label": "Dispute Request List"
+  },
+  {
+    "section": "archive",
+    "icon": "assets/images/Archive.png",
+    "altText": "Archive Icon",
+    "label": "Archive"
+  },
+  {
+    "section": "settings",
+    "icon": "assets/images/Settings.png",
+    "altText": "Settings Icon",
+    "label": "Settings"
+  }
+]

@@ -1,0 +1,16 @@
+<ion-content class="dashboard-container">
+  <ion-grid>
+    <ion-row>
+      <ion-col  class="menu" size="12" *ngFor="let item of menuItems">
+        <ion-card class="menu-item" (click)="goToSection(item.section)">
+          <ion-card-header>
+            <ion-img [src]="item.icon" [alt]="item.altText"></ion-img>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label>{{item.label}}</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

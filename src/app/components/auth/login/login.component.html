@@ -1,0 +1,71 @@
+<!-- <div class="main_content">
+  <ion-card class="login-card">
+    <ion-card-header>
+      <ion-card-title>Login</ion-card-title>
+      <ion-card-subtitle>Login to access your account</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="login-container">
+        <div *ngIf="step === 1" class="login-form">
+          <form [formGroup]="mobileForm" (ngSubmit)="handleMobileSubmit()">
+            <ion-item>
+              <ion-input formControlName="mobileNumber" 
+              maxlength="10" label="Mobile No."  
+              labelPlacement="floating" 
+              placeholder="Enter Mobile Number"
+              helperText="Enter a valid Mobile Number"
+              errorText="Invalid Mobile Number"
+              ></ion-input>
+            </ion-item>
+            <ion-button expand="block" type="submit" [disabled]="mobileForm.invalid">Send OTP</ion-button>
+          </form>
+        </div>
+        <div *ngIf="step === 2" class="login-form">
+          <app-otp-verification [mobileNumber]="mobileNumber"></app-otp-verification>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</div> -->
+
+<ion-content>
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col size-md="6" size-xs="12" class="login-col">
+        <div class="main_content">
+          <ion-card class="login-card">
+            <ion-card-header>
+              <ion-card-title>Login</ion-card-title>
+              <ion-card-subtitle>Login to access your account</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <div class="login-container">
+                
+                <!-- Mobile Number Step -->
+                <div *ngIf="step === 1" class="login-form">
+                  <form [formGroup]="mobileForm" (ngSubmit)="handleMobileSubmit()">
+                    <ion-item>
+                      <ion-input formControlName="mobileNumber" 
+                        maxlength="10" label="Mobile No."  
+                        labelPlacement="floating" 
+                        placeholder="Enter Mobile Number"
+                        helperText="Enter a valid Mobile Number"
+                        errorText="Invalid Mobile Number"
+                      ></ion-input>
+                    </ion-item>
+                    <ion-button expand="block" type="submit" [disabled]="mobileForm.invalid">Send OTP</ion-button>
+                  </form>
+                </div>
+                
+                <!-- OTP Step -->
+                <div *ngIf="step === 2" class="login-form">
+                  <app-otp-verification [mobileNumber]="mobileNumber"></app-otp-verification>
+                </div>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

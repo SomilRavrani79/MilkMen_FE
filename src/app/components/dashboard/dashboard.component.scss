@@ -1,0 +1,42 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    // gap: 15px;
+  }
+
+  ion-card{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-inline-start : 0px;
+    margin-inline-end : 0px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    // padding: 10px;
+    // background-color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  ion-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .menu-item span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  ion-card-header+.card-content-ios{
+    padding: 20px;
+  }
+
+  ion-card-header{
+    padding-inline-end : 0px;
+  }
+
+  

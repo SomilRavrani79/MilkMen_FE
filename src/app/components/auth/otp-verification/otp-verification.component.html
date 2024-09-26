@@ -1,0 +1,16 @@
+<form [formGroup]="otpForm" (ngSubmit)="handleOtpSubmit()">
+  <ion-item>
+    <ion-input 
+    formControlName="otp" 
+    type="number"
+    labelPlacement="floating" 
+    placeholder="Enter OTP"
+    helperText="Enter a valid 4 Digit OTP"
+    errorText="Invalid OTP"
+    ></ion-input>
+  </ion-item>
+  <ion-button expand="block" type="submit" [disabled]="otpForm.invalid">Verify OTP</ion-button>
+</form>
+ 
+
+

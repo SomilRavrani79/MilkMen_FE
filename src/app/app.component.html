@@ -1,0 +1,43 @@
+<ion-menu contentId="main-content" backdropDismiss="true" side="start" swipeGesture="true" *ngIf="!isLoginPage">
+  <ion-header>
+    <ion-toolbar>
+      <!-- Section for Logged-in User or Application Name -->
+      <div>
+        <!-- <img src="assets/user-avatar.png" alt="User Avatar" class="user-avatar" /> -->
+        <h2 style="margin-left: 20px;">MILK MEN</h2>
+        <!-- Or use {{ loggedInUserName }} if pulling from component -->
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <!-- Menu List with Icons -->
+    <ion-list>
+      <ion-item *ngFor="let item of navItems" (click)="item.action ? item.action() : close()">
+        <!-- Icon/Image for Menu Item -->
+        <ion-icon [name]="item.icon" slot="start" size="small"></ion-icon>
+        <!-- You can also use an image instead of icon -->
+        <!-- <img src="assets/{{item.icon}}.png" alt="{{item.label}}" class="menu-icon" /> -->
+        <ion-label>{{ item.label }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header *ngIf="!isLoginPage">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ng-container *ngIf="isDashboard; else backBtn">
+          <ion-menu-button></ion-menu-button>
+        </ng-container>
+        <ng-template #backBtn>
+          <ion-back-button defaultHref="/dashboard"></ion-back-button>
+        </ng-template>
+      </ion-buttons>
+      <ion-title>{{pageTitle}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+      <router-outlet></router-outlet>
+  </ion-content>
+</div>
